@@ -1,0 +1,21 @@
+<div id="weather-sec">
+    <div>
+        <h1>Weather Information</h1>
+     <input class="weather-out" type="text" ng-model="$ctrl.city" placeholder="Enter a city">
+     <button class="www" ng-click="$ctrl.getWeather()">Get Weather</button>
+    </div>
+
+    <div ng-if="$ctrl.weatherData">
+        <ul>
+          <li>City: {{$ctrl.weatherData.name}}</li>
+          <li>Temperature: {{$ctrl.weatherData.main.temp}} °C</li>
+          <li>Wind Speed: {{$ctrl.weatherData.wind.speed}} m/s</li>
+          <li>Precipitation: {{$ctrl.weatherData.weather[0].description}}</li>
+        </ul>
+    </div>
+
+    <div ng-if="$ctrl.error">
+        <p>{{$ctrl.error}}</p>
+    </div>
+    
+</div>

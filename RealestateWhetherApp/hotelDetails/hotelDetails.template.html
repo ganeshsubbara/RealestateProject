@@ -1,0 +1,16 @@
+<div class="hotel-details">
+  <div>
+     <h2>{{ $ctrl.hotel.name }} Details</h2>
+     <img id="hotel-detail-img" ng-src="{{ $ctrl.hotel.imagePath }}">
+     <li>Address: {{ $ctrl.hotel.address }}</li>
+     <li>Price: {{ $ctrl.hotel.price | currency:"INR₹" }}</li>
+     <li>Details: {{$ctrl.hotel.details}}</li>
+  </div>
+       
+    <div class="raj" ng-if="$ctrl.weatherDetails">
+        <h3>Weather Details:</h3>
+        <p>Temperature: {{ $ctrl.weatherDetails.main.temp }}°C</p>
+        <p>Humidity: {{ $ctrl.weatherDetails.main.humidity }}%</p>
+        <p>Weather: {{ $ctrl.weatherDetails.weather[0].description }}</p>
+    </div>
+</div>

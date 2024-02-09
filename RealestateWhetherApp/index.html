@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstate</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js" defer></script>
+    <script src="./app.module.js" defer></script>
+    <script src="./app.config.js" defer></script>
+    <script src="./core/core.module.js" defer></script>
+    <script src="./core/services/weatherService.service.js"defer></script>
+    <script src="./core/services/hotelService.service.js" defer></script>
+    <script src="./header/header.module.js" defer></script>
+    <script src="./header/header.component.js" defer></script>
+    <script src="./mainComp/mainComp.module.js" defer></script>
+    <script src="./mainComp/mainComp.component.js" defer></script>
+    <script src="./aboutUs/aboutUs.module.js" defer></script>
+    <script src="./aboutUs/aboutUs.component.js" defer></script>
+    <script src="./contact/contact.module.js" defer></script>
+    <script src="./contact/contact.component.js" defer></script>
+    <script src="./weather/weather.module.js" defer></script>
+    <script src="./weather/weather.component.js" defer></script>
+    <script src="./hotelDetails/hotelDetails.module.js" defer></script>
+    <script src="./hotelDetails/hotelDetails.component.js" defer></script>
+
+
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header></header>
+    <ng-view></ng-view>
+    
+</body>
+</html>
